@@ -28,6 +28,7 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
+    -webkit-text-decoration: none;
   }
 
   ul {
