@@ -2,6 +2,6 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-export default function SignUp() {
-  return <div />;
-}
+const SignUp = () => <h1>SignIn</h1>;
+
+export default SignUp;

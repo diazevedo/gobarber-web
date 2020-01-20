@@ -2,6 +2,6 @@ import React from 'react';
 
 // import { Container } from './styles';
 
-export default function SignIn() {
-  return <div />;
-}
+const SignIn = () => <h1>Login Page</h1>;
+
+export default SignIn;
