@@ -31,12 +31,24 @@ export const Content = styled.div`
       &::placeholder {
         color: rgba(255, 255, 255, 0.7);
       }
+
+      &:focus {
+        background: ${darken(0.03, '#141e30')};
+        border: #243b55 0.7px solid;
+      }
+    }
+
+    span {
+      color: #f64c75;
+      align-self: flex-start;
+      margin: 0 0 10px;
+      font-weight: bold;
     }
 
     button {
       margin: 5px 0 0;
       height: 44px;
-      background: #3b9eff;
+      background: #0d5690;
       font-weight: bold;
       color: #fff;
       border: 0;
@@ -44,7 +56,7 @@ export const Content = styled.div`
       font-size: 16px;
 
       &:hover {
-        background: ${darken(0.03, '#3b9eff')};
+        background: ${darken(0.03, '#0d5690')};
       }
     }
 
