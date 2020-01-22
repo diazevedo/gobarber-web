@@ -4,6 +4,7 @@ import { darken } from 'polished';
 export const Wrapper = styled.div`
   height: 100%;
   background: linear-gradient(180deg, #141e30, #243b55);
+  /* background: linear-gradient(-90deg, #7159c1, #ab59c1); */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,9 +55,15 @@ export const Content = styled.div`
       border: 0;
       border-radius: 4px;
       font-size: 16px;
+      transition: background 0.25s;
 
       &:hover {
         background: ${darken(0.03, '#0d5690')};
+      }
+
+      &:active {
+        background: ${darken(0.08, '#0d5690')};
+        transform: translateY(2px);
       }
     }
 
@@ -66,9 +73,11 @@ export const Content = styled.div`
       font-size: 16px;
       opacity: 0.8;
       color: #fff;
+      transition-duration: 0.5s;
 
       &:hover {
         opacity: 1;
+        transform: scale(1.05);
       }
     }
   }
