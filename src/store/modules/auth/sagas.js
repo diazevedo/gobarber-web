@@ -23,7 +23,7 @@ export function* signIn({ payload }) {
     yield put(signInSuccess(token, user));
 
     history.push('/dashboard');
-  } catch (err) {
+  } catch (error) {
     toast.error('Authentication has failed, check our details', {
       className: css({ borderRadius: '4px !important' }),
     });
@@ -31,4 +31,24 @@ export function* signIn({ payload }) {
   }
 }
 
-export default all([takeLatest('@auth/SIGN_IN_REQUEST', signIn)]);
+export function* signUp({ payload }) {
+  try {
+    const { name, email, password } = payload;
+    yield call(api.post, 'users', {
+      name,
+      email,
+      password,
+      provider: true,
+    });
+
+    history.push('/dashboard');
+  } catch (error) {
+    toast.error('Registering has failed, check our details');
+    yield put(signFailure());
+  }
+}
+
+export default all([
+  takeLatest('@auth/SIGN_IN_REQUEST', signIn),
+  takeLatest('@auth/SIGN_UP_REQUEST', signUp),
+]);
