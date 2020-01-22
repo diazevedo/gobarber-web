@@ -2,6 +2,7 @@ import { all, call, takeLatest, put } from 'redux-saga/effects';
 import { toast } from 'react-toastify';
 import api from '~/services/api';
 import history from '~/services/history';
+import { css } from 'glamor';
 
 import { signInSuccess, signFailure } from './actions';
 
@@ -23,7 +24,9 @@ export function* signIn({ payload }) {
 
     history.push('/dashboard');
   } catch (err) {
-    toast.error('Authentication has failed, check our details');
+    toast.error('Authentication has failed, check our details', {
+      className: css({ borderRadius: '4px !important' }),
+    });
     yield put(signFailure());
   }
 }

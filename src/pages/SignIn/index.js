@@ -38,7 +38,9 @@ const SignIn = () => {
         />
         <Input name="password" type="password" placeholder="Your password" />
 
-        <button type="submit">{loading ? 'Loading...' : 'Access'}</button>
+        <button type="submit" disabled={loading}>
+          {loading ? 'Loading...' : 'Access'}
+        </button>
         <Link to="register">Create your account</Link>
       </Form>
     </>
