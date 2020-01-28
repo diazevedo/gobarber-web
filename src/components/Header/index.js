@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Notifications from '~/components/Notifications';
+
 import logoColorful from '~/assets/logo-colorful.svg';
 import { Container, Content, Profile } from './styles';
 
@@ -14,6 +16,8 @@ const Header = () => {
         </nav>
 
         <aside>
+          <Notifications />
+
           <Profile>
             <div>
               <strong>Diego Azevedo</strong>
