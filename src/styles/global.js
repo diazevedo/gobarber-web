@@ -19,11 +19,14 @@ export default createGlobalStyle`
   }
 
   html, body, #root {
+    margin: 0;
     height: 100%;
   }
 
   body {
     -webkit-font-smoothing: antialised;
+    /* overflow: hidden; */
+    /* height: 100%; */
   }
 
   body, input, button {
