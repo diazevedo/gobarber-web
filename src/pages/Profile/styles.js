@@ -3,9 +3,7 @@ import { darken } from 'polished';
 
 export const Container = styled.div`
   max-width: 600px;
-  /* margin: 0 auto; */
   margin: 25px auto;
-  /* padding: 10px auto; */
 
   form {
     display: flex;
