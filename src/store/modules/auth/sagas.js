@@ -25,6 +25,7 @@ export function* signIn({ payload }) {
 
     history.push('/dashboard');
   } catch (error) {
+    console.tron.error(error);
     toast.error('Authentication has failed, check our details', {
       className: css({ borderRadius: '4px !important' }),
     });
