@@ -1,5 +1,5 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: 'http://206.189.194.203' });
+const api = axios.create({ baseURL: 'https://gobarber.dideveloper.com' });
 
 export default api;
