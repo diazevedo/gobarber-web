@@ -5,11 +5,8 @@ The web version of an application that focuses on helping clients who are lookin
 <table>
   <tr><td colspan=2><strong>iOS</strong></td></tr>
   <tr>
-    <td><p align="center"><img src="./gitAssests/login.png" width="200" height="300"/></p></td>
-    <td><p align="center"><img src="./gitAssests/dash.png" width="200" height="300"/></p></td>
-  </tr>
-    <tr>
-    <td><p align="center"><img src="./gitAssests/notification.png" width="200" height="300"/></p></td>
+    <td><p align="center"><img src="./gitAssests/loginPage.png" width="200" height="300"/></p></td>
+    <td><p align="center"><img src="./gitAssests/notifications.png" width="200" height="300"/></p></td>
     <td><p align="center"><img src="./gitAssests/profile.png" width="200" height="300"/></p></td>
   </tr>
 </table>

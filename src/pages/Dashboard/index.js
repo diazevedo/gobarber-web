@@ -35,9 +35,12 @@ const Dashboard = () => {
 
   useEffect(() => {
     async function loadSchedule() {
+      console.log('jndfl');
       const response = await api.get('schedule/provider', {
         params: { date },
       });
+
+      console.log(response);
 
       const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
