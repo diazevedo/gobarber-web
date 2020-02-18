@@ -6,7 +6,7 @@ The web version of an application that focuses on helping clients who are lookin
   <tr><td colspan=2><strong>iOS</strong></td></tr>
   <tr>
     <td><p align="center"><img src="./gitAssests/login.png" width="200" height="300"/></p></td>
-    <td><p align="center"><img src="./gitAssests/dash.gif" width="200" height="300"/></p></td>
+    <td><p align="center"><img src="./gitAssests/dash.png" width="200" height="300"/></p></td>
   </tr>
     <tr>
     <td><p align="center"><img src="./gitAssests/notification.png" width="200" height="300"/></p></td>
