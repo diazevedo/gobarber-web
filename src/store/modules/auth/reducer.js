@@ -10,7 +10,7 @@ export default function auth(state = INITIAL_STATE, action) {
   return produce(state, draft => {
     switch (action.type) {
       case '@auth/SIGN_IN_REQUEST': {
-        draft.token = action.payload.token;
+        // draft.token = action.payload.token;
         draft.loading = true;
         break;
       }
@@ -24,19 +24,18 @@ export default function auth(state = INITIAL_STATE, action) {
 
       case '@auth/SIGN_FAILURE': {
         draft.loading = false;
-        draft.token = null;
+        // draft.token = null;
         break;
       }
 
       case '@auth/SIGN_OUT': {
         draft.signed = false;
         draft.token = null;
-        draft.loading = false;
+        // draft.loading = false;
         break;
       }
 
       default:
-        return state;
     }
   });
 }

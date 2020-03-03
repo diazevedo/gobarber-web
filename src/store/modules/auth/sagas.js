@@ -1,8 +1,10 @@
 import { all, call, takeLatest, put } from 'redux-saga/effects';
+
 import { toast } from 'react-toastify';
+import { css } from 'glamor';
+
 import api from '~/services/api';
 import history from '~/services/history';
-import { css } from 'glamor';
 
 import { signInSuccess, signFailure } from './actions';
 
@@ -35,6 +37,7 @@ export function* signIn({ payload }) {
 export function* signUp({ payload }) {
   try {
     const { name, email, password } = payload;
+
     yield call(api.post, 'users', {
       name,
       email,
@@ -42,7 +45,7 @@ export function* signUp({ payload }) {
       provider: true,
     });
 
-    history.push('/dashboard');
+    history.push('/');
   } catch (error) {
     toast.error('Registering has failed, check our details');
     yield put(signFailure());
