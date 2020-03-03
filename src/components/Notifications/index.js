@@ -24,7 +24,7 @@ const Notifications = () => {
   useEffect(() => {
     async function loadNotifications() {
       const response = await api.get('/notifications');
-      console.log(response);
+
       const data = response.data.map(notification => ({
         ...notification,
         timeDistance: formatDistance(

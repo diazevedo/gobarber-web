@@ -35,12 +35,9 @@ const Dashboard = () => {
 
   useEffect(() => {
     async function loadSchedule() {
-      console.log('jndfl');
       const response = await api.get('schedule/provider', {
         params: { date },
       });
-
-      console.log(response);
 
       const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
@@ -68,11 +65,11 @@ const Dashboard = () => {
     <Container>
       <header>
         <button type="button" onClick={handlePreviousDay}>
-          <MdChevronLeft size={36} color="#fff"></MdChevronLeft>
+          <MdChevronLeft size={36} color="#fff" />
         </button>
         <strong>{dateFormatted}</strong>
         <button type="button" onClick={handleNextDay}>
-          <MdChevronRight size={36} color="#fff"></MdChevronRight>
+          <MdChevronRight size={36} color="#fff" />
         </button>
       </header>
 
