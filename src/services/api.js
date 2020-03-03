@@ -5,6 +5,6 @@ const url = {
   development: 'http://localhost:3333',
 };
 
-const api = axios.create({ baseURL: url[process.env.NODE_ENV] });
+const api = axios.create({ baseURL: url.production });
 
 export default api;
