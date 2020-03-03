@@ -55,7 +55,7 @@ const Notifications = () => {
   return (
     <Container>
       <Badge onClick={handleToggleVisible} hasUnread={hasUnread}>
-        <MdNotifications color="#141e30" size={20}></MdNotifications>
+        <MdNotifications color="#141e30" size={20} />
       </Badge>
       <NotificationList visible={visible}>
         <Scroll>

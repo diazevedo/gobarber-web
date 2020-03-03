@@ -1,6 +1,10 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: 'https://gobarber.dideveloper.com' });
-// const api = axios.create({ baseURL: 'http://localhost:3333' });
+const url = {
+  production: 'https://gobarber.dideveloper.com',
+  development: 'http://localhost:3333',
+};
+
+const api = axios.create({ baseURL: url[process.env.NODE_ENV] });
 
 export default api;
