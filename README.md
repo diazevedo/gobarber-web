@@ -3,6 +3,11 @@
     GoBarber
 </h1>
 
+<h2 align="center">
+  <img alt="Web login page" src=".github/gobarber-web-login.png" width="48%" />
+  <img alt="Mobile login page" src=".github/gobarber-web-dashboard.png" width="48%" />
+</h2>
+
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/diazevedo/gobarber-web">
 
@@ -12,11 +17,6 @@
 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 </p>
-
-<h2 align="center">
-  <img alt="Web login page" src=".github/gobarber-web-login.png" width="48%" />
-  <img alt="Mobile login page" src=".github/gobarber-web-dashboard.png" width="48%" />
-</h2>
 
 ## :page_with_curl: About
 
