@@ -18,7 +18,7 @@
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 </p>
 
-## :page_with_curl: About
+### Description
 
 The web version of an application that connects barbers and customers. The web version allows professionals to manage their agenda and profile. This project was built during the [Rockeseat Bootcamp](https://rocketseat.com.br/gostack).
 
