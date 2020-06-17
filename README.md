@@ -1,11 +1,11 @@
 <h1 align="center">
-  <img alt="Web login page" src=".github/logo.svg" width="5%" align="center"/> </br>
+  <img alt="Login page" src=".github/logo.svg" width="5%" align="center"/> </br>
     GoBarber
 </h1>
 
 <h2 align="center">
-  <img alt="Web login page" src=".github/gobarber-web-login.png" width="45%" height="300px"/>
-  <img alt="Mobile login page" src=".github/gobarber-web-dashboard.png" width="20%" />
+  <img alt="Web login page" src=".github/gobarber-web-login.png" width="48%" />
+  <img alt="Mobile login page" src=".github/gobarber-web-dashboard.png" width="48%" />
 </h2>
 
 ## :page_with_curl: About
