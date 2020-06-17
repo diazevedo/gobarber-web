@@ -14,7 +14,7 @@ const Header = () => {
     <Container>
       <Content>
         <nav>
-          <img src={logoColorful} alt="Gobarber logo"></img>
+          <img src={logoColorful} alt="Gobarber logo" />
           <Link to="/dashboard">dashboard</Link>
         </nav>
 
@@ -31,7 +31,7 @@ const Header = () => {
                 (profile.avatar && profile.avatar.url) ||
                 'https://api.adorable.io/avatars/50/abott@adorable.png'
               }
-              alt="Diego Azevedo"
+              alt={profile.name}
             />
           </Profile>
         </aside>
