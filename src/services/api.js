@@ -1,10 +1,6 @@
 import axios from 'axios';
 
-const url = {
-  production: 'https://api.gobarber.dideveloper.com',
-  development: 'http://localhost:3333',
-};
-
-const api = axios.create({ baseURL: 'https://api.gobarber.dideveloper.com' });
+console.log(process.env.REACT_APP_API_URL);
+const api = axios.create({ baseURL: process.env.REACT_APP_API_URL });
 
 export default api;
