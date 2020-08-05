@@ -24,6 +24,8 @@ The web version of an application that connects barbers and customers. The web v
 
 It has the [backend](https://github.com/diazevedo/gobarber) and [mobile](https://github.com/diazevedo/gobarber-mobile).
 
+You can access the application [here](https://www.gobarber.dideveloper.com).
+
 ### Technologies / Libraries
 
 - [React](https://reactjs.org/)
