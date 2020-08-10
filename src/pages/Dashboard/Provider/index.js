@@ -15,7 +15,9 @@ import { utcToZonedTime } from 'date-fns-tz';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import api from '~/services/api';
 
-import { Container, Time } from './styles';
+import AppointmentCard from '~/components/AppointmentCard';
+import ScheduleCard from '~/components/ScheduleCard';
+import { Container } from './styles';
 
 const range = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21];
 
@@ -74,14 +76,17 @@ const Dashboard = () => {
       </header>
 
       <ul>
-        {schedule.map(time => (
-          <Time key={time.time} past={time.past} available={!time.appointment}>
-            <strong>{time.time}</strong>
-            <span>
-              {time.appointment ? time.appointment.user.name : 'Available'}
-            </span>
-          </Time>
-        ))}
+        {schedule.map(time =>
+          time.appointment ? (
+            <AppointmentCard
+              appointment={time.appointment}
+              user={time.appointment.user}
+              dateInfo={time.time}
+            />
+          ) : (
+            <ScheduleCard time={time} />
+          )
+        )}
       </ul>
     </Container>
   );

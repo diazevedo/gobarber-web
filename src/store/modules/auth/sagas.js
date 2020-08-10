@@ -16,16 +16,12 @@ export function* signIn({ payload }) {
 
     const { token, user } = response.data;
 
-    if (!user.provider) {
-      toast.error('User is not a provider');
-      return;
-    }
-
     api.defaults.headers.Authorization = `Bearer ${token}`;
 
     yield put(signInSuccess(token, user));
 
-    history.push('/dashboard');
+    if (user.provider) history.push('/dashboard');
+    else history.push('/dashboard/customer');
   } catch (error) {
     toast.error('Authentication has failed, check our details', {
       className: css({ borderRadius: '4px !important' }),

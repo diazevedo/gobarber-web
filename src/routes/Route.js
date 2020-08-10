@@ -9,13 +9,17 @@ import { store } from '~/store';
 
 const RouteWrapper = ({ component: Component, isPrivate, ...rest }) => {
   const { signed } = store.getState().auth;
+  const { profile } = store.getState().user;
 
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
   }
 
   if (signed && !isPrivate) {
-    return <Redirect to="/dashboard" />;
+    if (profile && profile.provider)
+      return <Redirect to="/dashboard/provider" />;
+
+    return <Redirect to="/dashboard/customer" />;
   }
 
   const Layout = signed ? DefaultLayout : AuthLayout;

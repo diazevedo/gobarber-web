@@ -15,11 +15,15 @@ const Header = () => {
       <Content>
         <nav>
           <img src={logoColorful} alt="Gobarber logo" />
-          <Link to="/dashboard">dashboard</Link>
+          {profile.provider ? (
+            <Link to="/dashboard">dashboard</Link>
+          ) : (
+            <Link to="/dashboard/customer">dashboard</Link>
+          )}
         </nav>
 
         <aside>
-          <Notifications />
+          {profile.provider ? <Notifications /> : null}
 
           <Profile>
             <div>
